@@ -44,8 +44,7 @@ export default function Home() {
     axios
       .post(url, data, { headers: headers })
       .then((response) => {
-        console.log(response);
-        //console.log(getTranslation(response.data.choices[0].message.content));
+        
         setChatLog((prevChatLog) => [
           ...prevChatLog,
           { type: "bot", message: response.data.choices[0].message.content },
