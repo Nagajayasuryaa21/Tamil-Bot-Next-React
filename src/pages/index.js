@@ -35,7 +35,7 @@ export default function Home() {
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_OPENAI_API_KEY}`,
     };
     const data = {
-      model: "gpt-3.5-turbo-0301",
+      model: "gpt-4o-mini",
       messages: [{ role: "user", content: message +"\n translate your answer it in tamil"}]
     };
 
